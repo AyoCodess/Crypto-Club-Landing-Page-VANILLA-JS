@@ -1,0 +1,21 @@
+{
+  "name": "iiagi-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch scss:dist/css",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.35.1"
+  },
+  "dependencies": {
+    "autoprefixer": "^10.2.6",
+    "bootstrap": "^5.0.1",
+    "parcel-bundler": "^1.12.5",
+    "postcss-cli": "^8.3.1"
+  },
+  "description": ""
+}

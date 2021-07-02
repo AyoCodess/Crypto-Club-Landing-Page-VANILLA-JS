@@ -11,4 +11,19 @@
     #f6cc4d,
     #f1b80c
   );
+
+  --current-release-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.text-gradient-gold {
+  background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-white {
+  background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

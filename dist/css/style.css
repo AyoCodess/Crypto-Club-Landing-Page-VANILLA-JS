@@ -10756,9 +10756,9 @@ textarea.form-control-lg {
   margin-left: 2%;
 }
 .showcase-container .main-texts {
-  margin-top: 6rem;
+  margin-top: 0rem;
   align-self: flex-start;
-  width: 35rem;
+  width: 38rem;
   text-transform: capitalize;
 }
 .showcase-container .main-texts .title {
@@ -10774,7 +10774,7 @@ textarea.form-control-lg {
 
 .btc-animation {
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 60%;
 }
 .btc-animation .bitcoin {
@@ -10824,11 +10824,11 @@ textarea.form-control-lg {
   }
 }
 .divider {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: block;
   box-sizing: border-box;
   height: 100px;
-  background-color: #f1b80c;
+  background-image: linear-gradient(to right, #000000, #363636, #232222);
   clip-path: ellipse(93% 100% at 11.08% 100%);
 }
 
@@ -10845,22 +10845,14 @@ html {
   box-sizing: inherit;
 }
 
+a {
+  text-decoration: none;
+}
+
 body {
   font-family: "Calibre", sans-serif;
   background: var(--main-black-background);
   color: var(--text-gold-primary-color);
-}
-
-.text-gradient-gold {
-  background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.text-gradient-white {
-  background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 nav {
@@ -10869,20 +10861,20 @@ nav {
   justify-content: space-between;
   font-size: 2rem;
 }
+nav h1 {
+  margin-top: 1.5rem;
+  padding: 2rem 2rem;
+}
 nav ul {
   display: flex;
+  align-items: center;
   margin-top: 2rem;
-  background: var(--navbar-gold-gradient-bg);
+  background: linear-gradient(to right, #bd9008, #e9c65f, #bd9008);
   border-radius: 3rem;
   box-shadow: var(--current-release-box-shadow);
 }
 nav li {
-  margin: 1.5rem;
-  border-bottom: 2px solid;
-  border-color: transparent;
-}
-nav h1 {
-  font-size: 3rem;
+  margin: 1.2rem 1rem;
 }
 nav li:last-child {
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
@@ -10892,6 +10884,14 @@ nav li:last-child {
   border-bottom: none;
   transition: background 0.5s ease;
   cursor: pointer;
+}
+nav li:last-child a {
+  display: flex;
+}
+nav li:last-child a i {
+  text-align: center;
+  font-size: 3rem;
+  padding: 1rem;
 }
 nav li:last-child a:hover {
   color: var(--primary-text-color);
@@ -10908,6 +10908,74 @@ nav li:last-child a:hover {
     #f6cc4d,
     #f1b80c
   );
+  --current-release-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.text-gradient-gold {
+  background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-white {
+  background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.nav-btn {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white !important;
+  transition: color 0.5s ease;
+}
+.nav-btn:hover {
+  transform: scale(0.98) !important;
+  color: black !important;
+}
+
+nav ul {
+  box-shadow: var(--current-release-box-shadow);
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+  display: grid;
+  gap: 3rem;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: start;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+.cta-buttons .main-btn {
+  text-align: center;
+  color: var(--text-black-menu-color);
+  background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+}
+.cta-buttons .main-btn:hover {
+  transform: translateY(5px);
+}
+.cta-buttons .sub-btn {
+  text-align: center;
+  color: var(--text-black-menu-color);
+  background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
+  border-radius: 2rem;
+  padding: 1rem 1.5rem;
+  font-weight: bold;
+  transition: transform 0.5s ease;
+}
+.cta-buttons .sub-btn:hover {
+  transform: translateY(5px);
 }
 
 /*# sourceMappingURL=style.css.map */

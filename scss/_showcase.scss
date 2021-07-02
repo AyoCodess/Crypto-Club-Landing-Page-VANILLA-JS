@@ -7,9 +7,9 @@
   margin-left: 2%;
 
   .main-texts {
-    margin-top: 6rem;
+    margin-top: 0rem;
     align-self: flex-start;
-    width: 35rem;
+    width: 38rem;
 
     text-transform: capitalize;
     .title {
@@ -35,7 +35,7 @@
 
 .btc-animation {
   position: absolute;
-  top: 0;
+  top: 3%;
   left: 60%;
 
   .bitcoin {
@@ -92,10 +92,10 @@
 //? section divider bottom
 
 .divider {
-  margin-top: 5rem;
+  margin-top: 8rem;
   display: block;
   box-sizing: border-box;
   height: 100px;
-  background-color: #f1b80c;
+  background-image: linear-gradient(to right, #000000, #363636, #232222);
   clip-path: ellipse(93% 100% at 11.08% 100%);
 }

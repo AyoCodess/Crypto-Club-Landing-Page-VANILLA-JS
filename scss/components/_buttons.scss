@@ -1,0 +1,65 @@
+@use "../variables";
+@use "./global";
+
+.nav-btn {
+  display: inline-block;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+  color: white !important;
+  transition: color 0.5s ease;
+
+  &:hover {
+    transform: scale(0.98) !important;
+    color: black !important;
+  }
+}
+
+nav {
+  ul {
+    box-shadow: var(--current-release-box-shadow);
+  }
+}
+
+.cta-buttons {
+  margin-top: 2rem;
+  display: grid;
+  gap: 3rem;
+
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  justify-items: start;
+
+  font-size: 2.5rem;
+  cursor: pointer;
+
+  .main-btn {
+    text-align: center;
+    color: var(--text-black-menu-color);
+    background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+
+  .sub-btn {
+    text-align: center;
+    color: var(--text-black-menu-color);
+    background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
+    border-radius: 2rem;
+    padding: 1rem 1.5rem;
+    font-weight: bold;
+    transition: transform 0.5s ease;
+
+    &:hover {
+      transform: translateY(5px);
+    }
+  }
+}

@@ -11,13 +11,24 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  font-weight: 300;
-  font-style: normal;
-  font-family: "Circular-Loom", "lato", sans-serif;
-  background: var(--main-background);
-  color: var(--text-primary-color);
+@import url("http://fonts.cdnfonts.com/css/calibre");
 
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
-    format("woff2");
+body {
+  font-family: "Calibre", sans-serif;
+  background: var(--main-black-background);
+  color: var(--text-gold-primary-color);
+}
+
+//? text
+
+.text-gradient-gold {
+  background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-white {
+  background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

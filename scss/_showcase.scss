@@ -1,22 +1,62 @@
 .showcase-container {
-  margin-top: 15rem;
+  position: relative;
+  margin-top: 8rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
+  margin-left: 2%;
+
+  .main-texts {
+    margin-top: 6rem;
+    align-self: flex-start;
+    width: 35rem;
+
+    text-transform: capitalize;
+    .title {
+      font-size: 6rem;
+      color: var(--text-white-secondary-color);
+      font-weight: 700;
+
+      // padding: 1rem 1rem;
+      // background: rgba(255, 255, 255, 0.1);
+      // border-radius: 3rem;
+      // width: 27.5rem;
+    }
+  }
+
+  .sub-text {
+    color: var(--text-gold-primary-color);
+    font-size: 2rem;
+    font-weight: 500;
+  }
 }
 
-.title {
-  font-size: 10rem;
-}
+//? BTC IMG and ANIMATION
 
-.bitcoin {
-  width: 225px;
-  height: 100px;
-  margin: 0 auto;
-}
+.btc-animation {
+  position: absolute;
+  top: 0;
+  left: 60%;
 
-img {
-  width: 250px;
-  animation: 2s transform infinite;
+  .bitcoin {
+    width: 225px;
+    height: 100px;
+    margin: 0 auto;
+  }
+
+  img {
+    width: 250px;
+    animation: 2s transform infinite;
+  }
+
+  .shadow-btc {
+    width: 250px;
+    height: 50px;
+    background: var(--navbar-gold-gradient-bg);
+    border-radius: 100%;
+    margin: 180px auto 10px auto;
+    -webkit-animation: shadow 2s infinite;
+  }
 }
 
 @keyframes transform {
@@ -29,15 +69,6 @@ img {
   100% {
     transform: translateY(-5%);
   }
-}
-
-.shadow-btc {
-  width: 250px;
-  height: 50px;
-  background: var(--navbar-bg);
-  border-radius: 100%;
-  margin: 180px auto;
-  -webkit-animation: shadow 2s infinite;
 }
 
 @-webkit-keyframes shadow {
@@ -56,4 +87,15 @@ img {
     -webkit-transform: scale(0.8);
     -webkit-filter: blur(10px);
   }
+}
+
+//? section divider bottom
+
+.divider {
+  margin-top: 5rem;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  background-color: #f1b80c;
+  clip-path: ellipse(93% 100% at 11.08% 100%);
 }

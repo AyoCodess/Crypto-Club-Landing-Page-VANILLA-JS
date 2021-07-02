@@ -1,9 +1,14 @@
 :root {
-  --main-background: linear-gradient(to right, #000000, #252525);
+  --main-black-background: linear-gradient(to right, #000000, #252525);
 
-  --text-primary-color: rgba(241, 184, 12, 1);
-  --text-secondary-color: white;
-  --text-menu-color: black;
+  --text-gold-primary-color: rgba(241, 184, 12, 1);
+  --text-white-secondary-color: white;
+  --text-black-menu-color: black;
 
-  --navbar-bg: linear-gradient(to right, #f1b80c, #f6cc4d, #f1b80c);
+  --navbar-gold-gradient-bg: linear-gradient(
+    to right,
+    #f1b80c,
+    #f6cc4d,
+    #f1b80c
+  );
 }

@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("http://fonts.cdnfonts.com/css/calibre");
 /*!
  * Bootstrap v5.0.2 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -10747,24 +10748,51 @@ textarea.form-control-lg {
   }
 }
 .showcase-container {
-  margin-top: 15rem;
+  position: relative;
+  margin-top: 8rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: start;
+  align-items: center;
+  margin-left: 2%;
+}
+.showcase-container .main-texts {
+  margin-top: 6rem;
+  align-self: flex-start;
+  width: 35rem;
+  text-transform: capitalize;
+}
+.showcase-container .main-texts .title {
+  font-size: 6rem;
+  color: var(--text-white-secondary-color);
+  font-weight: 700;
+}
+.showcase-container .sub-text {
+  color: var(--text-gold-primary-color);
+  font-size: 2rem;
+  font-weight: 500;
 }
 
-.title {
-  font-size: 10rem;
+.btc-animation {
+  position: absolute;
+  top: 0;
+  left: 60%;
 }
-
-.bitcoin {
+.btc-animation .bitcoin {
   width: 225px;
   height: 100px;
   margin: 0 auto;
 }
-
-img {
+.btc-animation img {
   width: 250px;
   animation: 2s transform infinite;
+}
+.btc-animation .shadow-btc {
+  width: 250px;
+  height: 50px;
+  background: var(--navbar-gold-gradient-bg);
+  border-radius: 100%;
+  margin: 180px auto 10px auto;
+  -webkit-animation: shadow 2s infinite;
 }
 
 @keyframes transform {
@@ -10778,15 +10806,6 @@ img {
     transform: translateY(-5%);
   }
 }
-.shadow-btc {
-  width: 250px;
-  height: 50px;
-  background: var(--navbar-bg);
-  border-radius: 100%;
-  margin: 180px auto;
-  -webkit-animation: shadow 2s infinite;
-}
-
 @-webkit-keyframes shadow {
   0% {
     width: 300px;
@@ -10804,6 +10823,15 @@ img {
     -webkit-filter: blur(10px);
   }
 }
+.divider {
+  margin-top: 5rem;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  background-color: #f1b80c;
+  clip-path: ellipse(93% 100% at 11.08% 100%);
+}
+
 html {
   font-size: 62.5%;
   box-sizing: border-box;
@@ -10818,55 +10846,68 @@ html {
 }
 
 body {
-  font-weight: 300;
-  font-style: normal;
-  font-family: "Circular-Loom", "lato", sans-serif;
-  background: var(--main-background);
-  color: var(--text-primary-color);
-  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2") format("woff2");
+  font-family: "Calibre", sans-serif;
+  background: var(--main-black-background);
+  color: var(--text-gold-primary-color);
 }
 
-.navbar-brand {
-  color: black;
+.text-gradient-gold {
+  background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-white {
+  background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   font-size: 2rem;
-  font-weight: bold;
 }
-
-.menu {
-  background: var(--navbar-bg);
+nav ul {
+  display: flex;
+  margin-top: 2rem;
+  background: var(--navbar-gold-gradient-bg);
+  border-radius: 3rem;
+  box-shadow: var(--current-release-box-shadow);
 }
-.menu li {
-  padding: 0 0.7rem;
-}
-.menu li a {
-  color: var(--text-secondary-color) !important;
-  text-transform: capitalize;
-  font-weight: 300;
-  white-space: nowrap;
-  font-size: 1.2rem;
-}
-.menu button {
-  font-weight: 300;
-  margin-left: 2rem;
-}
-
-.navbar-toggler-icon .navbar-toggler:focus {
-  box-shadow: none;
-  border: none !important;
-  outline: transparent !important;
-}
-
-.navbar-light .navbar-toggler {
-  color: transparent;
+nav li {
+  margin: 1.5rem;
+  border-bottom: 2px solid;
   border-color: transparent;
+}
+nav h1 {
+  font-size: 3rem;
+}
+nav li:last-child {
+  background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
+  border-radius: 10px;
+  font-weight: bold;
+  padding: 0rem 1rem;
+  border-bottom: none;
+  transition: background 0.5s ease;
+  cursor: pointer;
+}
+nav li:last-child a:hover {
+  color: var(--primary-text-color);
 }
 
 :root {
-  --main-background: linear-gradient(to right, #000000, #252525);
-  --text-primary-color: rgba(241, 184, 12, 1);
-  --text-secondary-color: white;
-  --text-menu-color: black;
-  --navbar-bg: linear-gradient(to right, #f1b80c, #f6cc4d, #f1b80c);
+  --main-black-background: linear-gradient(to right, #000000, #252525);
+  --text-gold-primary-color: rgba(241, 184, 12, 1);
+  --text-white-secondary-color: white;
+  --text-black-menu-color: black;
+  --navbar-gold-gradient-bg: linear-gradient(
+    to right,
+    #f1b80c,
+    #f6cc4d,
+    #f1b80c
+  );
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,1 +1,1 @@
-New Website
+In progress: https://isitagoodinvestment.netlify.app/

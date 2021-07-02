@@ -27,3 +27,9 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+
+.text-gradient-black {
+  background-image: linear-gradient(to right, #000000, #252525);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,3 +1,6 @@
-@use "bs-custom" as *;
-@use "../scss/sections/navbar" as *;
-@use "showcase" as *;
+@use "bs-custom"; //!Bootstrap
+
+@use "showcase";
+@use "../scss/components/global";
+@use "../scss/sections/navbar";
+@use "variables";

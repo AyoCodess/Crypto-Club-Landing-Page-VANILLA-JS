@@ -10746,34 +10746,127 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+.showcase-container {
+  margin-top: 15rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.title {
+  font-size: 10rem;
+}
+
+.bitcoin {
+  width: 225px;
+  height: 100px;
+  margin: 0 auto;
+}
+
+img {
+  width: 250px;
+  animation: 2s transform infinite;
+}
+
+@keyframes transform {
+  0% {
+    transform: translateY(-5%);
+  }
+  60% {
+    transform: translateY(10%);
+  }
+  100% {
+    transform: translateY(-5%);
+  }
+}
+.shadow-btc {
+  width: 250px;
+  height: 50px;
+  background: var(--navbar-bg);
+  border-radius: 100%;
+  margin: 180px auto;
+  -webkit-animation: shadow 2s infinite;
+}
+
+@-webkit-keyframes shadow {
+  0% {
+    width: 300px;
+    -webkit-transform: scale(0.8);
+    -webkit-filter: blur(10px);
+  }
+  60% {
+    width: 290px;
+    -webkit-transform: scale(1.1);
+    -webkit-filter: blur(15px);
+  }
+  100% {
+    width: 300px;
+    -webkit-transform: scale(0.8);
+    -webkit-filter: blur(10px);
+  }
+}
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Circular-Loom", "lato", sans-serif;
+  background: var(--main-background);
+  color: var(--text-primary-color);
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2") format("woff2");
+}
+
 .navbar-brand {
-  color: white;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .menu {
-  background-color: black;
+  background: var(--navbar-bg);
 }
 .menu li {
   padding: 0 0.7rem;
 }
 .menu li a {
-  color: white;
+  color: var(--text-secondary-color) !important;
   text-transform: capitalize;
   font-weight: 300;
   white-space: nowrap;
+  font-size: 1.2rem;
 }
 .menu button {
   font-weight: 300;
   margin-left: 2rem;
 }
 
-.navbar-toggler:focus {
+.navbar-toggler-icon .navbar-toggler:focus {
   box-shadow: none;
+  border: none !important;
+  outline: transparent !important;
 }
 
-.title {
-  margin-top: 10rem;
-  font-size: 20rem;
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
+}
+
+:root {
+  --main-background: linear-gradient(to right, #000000, #252525);
+  --text-primary-color: rgba(241, 184, 12, 1);
+  --text-secondary-color: white;
+  --text-menu-color: black;
+  --navbar-bg: linear-gradient(to right, #f1b80c, #f6cc4d, #f1b80c);
 }
 
 /*# sourceMappingURL=style.css.map */

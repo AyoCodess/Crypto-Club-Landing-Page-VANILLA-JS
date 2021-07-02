@@ -1,20 +1,24 @@
 @use "../bs-custom";
 
 .navbar-brand {
-  color: white;
+  color: black;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 .menu {
-  background-color: black;
+  background: var(--navbar-bg);
 
   li {
     padding: 0 0.7rem;
 
     a {
-      color: white;
+      color: var(--text-secondary-color) !important;
+
       text-transform: capitalize;
       font-weight: 300;
       white-space: nowrap;
+      font-size: 1.2rem;
     }
   }
 
@@ -24,6 +28,15 @@
   }
 }
 
-.navbar-toggler:focus {
-  box-shadow: none;
+.navbar-toggler-icon {
+  .navbar-toggler:focus {
+    box-shadow: none;
+    border: none !important;
+    outline: transparent !important;
+  }
+}
+
+.navbar-light .navbar-toggler {
+  color: transparent;
+  border-color: transparent;
 }

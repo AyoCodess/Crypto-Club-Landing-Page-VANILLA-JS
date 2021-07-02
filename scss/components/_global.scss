@@ -1,0 +1,23 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+body {
+  font-weight: 300;
+  font-style: normal;
+  font-family: "Circular-Loom", "lato", sans-serif;
+  background: var(--main-background);
+  color: var(--text-primary-color);
+
+  src: url("https://cdn.loom.com/assets/fonts/circular/CircularXXWeb-Black-bf067ecb8aa777ceb6df7d72226febca.woff2")
+    format("woff2");
+}

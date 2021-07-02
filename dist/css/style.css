@@ -10759,12 +10759,12 @@ textarea.form-control-lg {
   margin-top: 0rem;
   align-self: flex-start;
   width: 55rem;
-  text-transform: capitalize;
 }
 .showcase-container .main-texts .title {
   font-size: 6rem;
   color: var(--text-white-secondary-color);
   font-weight: 700;
+  text-transform: capitalize;
 }
 .showcase-container .sub-text {
   color: var(--text-gold-primary-color);
@@ -10859,6 +10859,24 @@ body {
   color: var(--text-gold-primary-color);
 }
 
+.divider {
+  margin-top: 8rem;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  background-image: linear-gradient(to right, #000000, #363636, #232222);
+  clip-path: ellipse(93% 100% at 11.08% 100%);
+}
+
+.divider-reverse {
+  margin-top: 6rem;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  background-image: linear-gradient(to right, #000000, #363636, #232222);
+  clip-path: ellipse(207% 100% at 178.74% 100%);
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -10883,7 +10901,6 @@ nav li {
 nav li:last-child {
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   border-radius: 10px;
-  font-weight: bold;
   padding: 0rem 1rem;
   border-bottom: none;
   transition: background 0.5s ease;
@@ -11046,7 +11063,6 @@ nav li:last-child a i {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 2rem;
-  font-weight: bold;
   color: white !important;
   transition: color 0.5s ease;
 }
@@ -11077,7 +11093,6 @@ nav ul {
   background-image: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
   border-radius: 2rem;
   padding: 1rem 1.5rem;
-  font-weight: bold;
   transition: transform 0.5s ease;
 }
 .cta-buttons .main-btn:hover {
@@ -11089,7 +11104,6 @@ nav ul {
   background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
   border-radius: 2rem;
   padding: 1rem 1.5rem;
-  font-weight: bold;
   transition: transform 0.5s ease;
 }
 .cta-buttons .sub-btn:hover {

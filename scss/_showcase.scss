@@ -11,11 +11,11 @@
     align-self: flex-start;
     width: 55rem;
 
-    text-transform: capitalize;
     .title {
       font-size: 6rem;
       color: var(--text-white-secondary-color);
       font-weight: 700;
+      text-transform: capitalize;
 
       // padding: 1rem 1rem;
       // background: rgba(255, 255, 255, 0.1);

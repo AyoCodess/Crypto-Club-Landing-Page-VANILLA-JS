@@ -27,4 +27,22 @@ body {
   color: var(--text-gold-primary-color);
 }
 
-//? text
+//? section divider bottom
+
+.divider {
+  margin-top: 8rem;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  background-image: linear-gradient(to right, #000000, #363636, #232222);
+  clip-path: ellipse(93% 100% at 11.08% 100%);
+}
+
+.divider-reverse {
+  margin-top: 6rem;
+  display: block;
+  box-sizing: border-box;
+  height: 100px;
+  background-image: linear-gradient(to right, #000000, #363636, #232222);
+  clip-path: ellipse(207% 100% at 178.74% 100%);
+}

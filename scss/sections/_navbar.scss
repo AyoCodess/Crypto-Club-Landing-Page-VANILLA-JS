@@ -29,15 +29,11 @@ nav {
     background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
 
     border-radius: 10px;
-    font-weight: bold;
+
     padding: 0rem 1rem;
     border-bottom: none;
     transition: background 0.5s ease; //! does not work on gradients
     cursor: pointer;
-
-    &:hover {
-      // background: linear-gradient(to right, #f4c4f3, #fc67fa);
-    }
 
     a {
       display: flex;

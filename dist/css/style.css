@@ -5701,7 +5701,7 @@ textarea.form-control-lg {
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
-  transition: transform 0.6s ease-in-out;
+  transition: transform 20s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5742,7 +5742,7 @@ textarea.form-control-lg {
 .carousel-fade .active.carousel-item-end {
   z-index: 0;
   opacity: 0;
-  transition: opacity 0s 0.6s;
+  transition: opacity 0s 20s;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start,
@@ -5861,9 +5861,9 @@ textarea.form-control-lg {
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
+  right: 0%;
   bottom: 1.25rem;
-  left: 15%;
+  left: 0%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
@@ -10788,7 +10788,7 @@ textarea.form-control-lg {
 }
 .btc-animation .shadow-btc {
   width: 250px;
-  height: 50px;
+  height: 60px;
   background: var(--navbar-gold-gradient-bg);
   border-radius: 100%;
   margin: 180px auto 10px auto;
@@ -10882,6 +10882,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
+  margin-top: 3rem;
 }
 nav h1 {
   margin-top: 1.5rem;
@@ -10901,10 +10902,11 @@ nav li {
 nav li:last-child {
   background: linear-gradient(to right, #2c5364, #203a43, #0f2027);
   border-radius: 10px;
-  padding: 0rem 1rem;
+  padding: 0rem 0.5rem;
   border-bottom: none;
   transition: background 0.5s ease;
   cursor: pointer;
+  margin-right: 3rem;
 }
 nav li:last-child a {
   display: flex;
@@ -10961,8 +10963,16 @@ nav li:last-child a i {
   width: 50rem;
   margin: 0rem 4rem;
 }
+.ps-container .ps-text-container h1 {
+  font-size: 5rem;
+}
 .ps-container .ps-text-container p {
   margin-top: 1rem;
+  font-size: 1.7rem;
+}
+
+.ps-container-mt {
+  margin-top: 6rem;
 }
 
 .container-card .card-1 {
@@ -11019,7 +11029,6 @@ nav li:last-child a i {
 }
 
 .container-card .card-1 .box .content h3 {
-  font-size: 1.8rem;
   color: #fff;
   z-index: 1;
   transition: 0.5s;
@@ -11027,11 +11036,12 @@ nav li:last-child a i {
 }
 
 .card-title {
-  margin-top: 3rem;
+  margin-top: 3.3rem;
+  font-size: 2.2rem;
 }
 
 .container-card .card-1 .box-1 .content-1 p {
-  font-size: 1rem;
+  font-size: 1.7rem;
   font-weight: 300;
   color: rgba(255, 255, 255, 0.9);
   z-index: 1;
@@ -11108,6 +11118,38 @@ nav ul {
 }
 .cta-buttons .sub-btn:hover {
   transform: translateY(5px);
+}
+
+.news-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  width: auto;
+  background-color: rgba(255, 255, 255, 0.15);
+}
+.news-container .carousel {
+  width: 100%;
+}
+.news-container .carousel p {
+  display: inline-block;
+  font-size: 2.2rem;
+  color: var(--text-white-secondary-color);
+  width: 100%;
+  margin-bottom: 0rem;
+  line-height: 0;
+}
+.news-container .carousel p:hover {
+  color: var(--text-gold-primary-color) !important;
+  cursor: pointer;
+  transform: scale(1.01);
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

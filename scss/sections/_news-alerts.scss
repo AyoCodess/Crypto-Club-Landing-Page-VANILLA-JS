@@ -1,0 +1,42 @@
+@use "../bs-custom";
+@use "../variables";
+@use "../components/global";
+
+.news-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+
+  margin-top: 2rem;
+
+  width: auto;
+  // padding: 1rem;
+
+  background-color: rgba(255, 255, 255, 0.15);
+  .carousel {
+    width: 100%;
+
+    p {
+      display: inline-block;
+      font-size: 2.2rem;
+      color: var(--text-white-secondary-color);
+      width: 100%;
+      margin-bottom: 0rem;
+      // transition: transform 0.5s;
+      line-height: 0;
+
+      &:hover {
+        color: var(--text-gold-primary-color) !important;
+        cursor: pointer;
+        transform: scale(1.01);
+      }
+    }
+  }
+}
+
+.carousel-inner {
+  position: relative;
+  width: 100%;
+  overflow: visible;
+  text-align: center;
+}

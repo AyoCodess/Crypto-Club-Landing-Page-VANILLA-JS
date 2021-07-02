@@ -1,0 +1,80 @@
+@use "../bs-custom";
+@use "../variables";
+@use "../components/global";
+
+.table-headers-container {
+  text-align: center;
+  margin-top: 5rem;
+  h1 {
+    font-size: 5rem;
+  }
+
+  p {
+    font-size: 2rem;
+  }
+}
+
+.container-table {
+  display: grid;
+  grid-template-columns: minmax((auto, 30rem)) minmax((auto, 30rem));
+  column-gap: 1rem;
+  margin-top: 15rem;
+  margin-bottom: 5rem;
+  padding: 3rem;
+  border-radius: 3rem;
+
+  justify-content: center;
+  align-items: center;
+
+  border: 2px solid;
+
+  border-color: var(--text-gold-primary-color);
+
+  max-width: 70rem;
+
+  margin: 5rem auto 0rem auto;
+
+  .crypto-column {
+    display: grid;
+    grid-template-columns: minmax((15rem, 30rem));
+    grid-template-rows: auto;
+
+    // justify-content: end;
+    align-items: center;
+
+    .crypto-coin {
+      padding: 1rem;
+      min-width: 15rem;
+    }
+  }
+
+  .crypto-rating {
+    display: grid;
+    grid-template-columns: minmax((15rem, 30rem));
+    grid-template-rows: auto;
+
+    // justify-content: start;
+    align-items: center;
+
+    .crypto-rating-score {
+      padding: 1rem;
+      min-width: 15rem;
+    }
+  }
+}
+
+.black-row {
+  background: var(--main-black-background) !important;
+  font-size: 1.5rem;
+}
+
+.silver-row {
+  background: var(---silver-gradient) !important;
+  color: black;
+  font-size: 1.5rem;
+}
+
+.header-title {
+  font-size: 3rem;
+  padding: 0rem !important;
+}

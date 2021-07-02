@@ -10771,4 +10771,9 @@ textarea.form-control-lg {
   box-shadow: none;
 }
 
+.title {
+  margin-top: 10rem;
+  font-size: 20rem;
+}
+
 /*# sourceMappingURL=style.css.map */

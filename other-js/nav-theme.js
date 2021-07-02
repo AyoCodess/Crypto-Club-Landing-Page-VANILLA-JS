@@ -1,9 +1,13 @@
+//? on load
+
+document.documentElement.setAttribute(`data-theme`, `dark`);
+
 const toggleSwitch = document.getElementById(`toggle-icon`);
 const button = document.querySelector(`.theme-btn`);
 const buttonBg = document.querySelector(`.theme-btn-bg`);
 
 function lightMode() {
-  buttonBg.style.background = `linear-gradient(to right, #f4c4f3, #fc67fa)`;
+  buttonBg.style.background = `linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4)`;
   localStorage.setItem(`theme`, `dark`);
 }
 
@@ -29,10 +33,6 @@ function toggleTheme(e) {
 //? check local storage for theme
 
 const currentTheme = localStorage.getItem(`theme`);
-
-if (currentTheme) {
-  document.documentElement.setAttribute(`data-theme`, currentTheme);
-}
 
 //? icon is not directly linked to theme, so needs to be changed manually
 

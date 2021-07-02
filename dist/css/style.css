@@ -10892,11 +10892,8 @@ nav li:last-child a i {
   text-align: center;
   font-size: 3rem;
   padding: 1rem;
+  color: #e9c65f;
 }
-nav li:last-child a:hover {
-  color: var(--primary-text-color);
-}
-
 :root {
   --main-black-background: linear-gradient(to right, #000000, #252525);
   --text-gold-primary-color: rgba(241, 184, 12, 1);

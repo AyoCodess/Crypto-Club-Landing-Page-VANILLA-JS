@@ -36,7 +36,7 @@
 
   .crypto-column {
     display: grid;
-    grid-template-columns: minmax((15rem, 30rem));
+    grid-template-columns: minmax((auto, 30rem));
     grid-template-rows: auto;
 
     // justify-content: end;
@@ -44,13 +44,13 @@
 
     .crypto-coin {
       padding: 1rem;
-      min-width: 15rem;
+      min-width: 10rem;
     }
   }
 
   .crypto-rating {
     display: grid;
-    grid-template-columns: minmax((15rem, 30rem));
+    grid-template-columns: minmax((auto, 30rem));
     grid-template-rows: auto;
 
     // justify-content: start;
@@ -58,7 +58,7 @@
 
     .crypto-rating-score {
       padding: 1rem;
-      min-width: 15rem;
+      min-width: 10rem;
     }
   }
 }

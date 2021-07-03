@@ -1,0 +1,133 @@
+@use "../bs-custom";
+@use "../variables";
+@use "../components/global";
+
+.border-bottom {
+  border-bottom: 1px solid;
+  border-color: var(--gold-gradient-most-used) !important;
+}
+
+.footer-container {
+  border-top: 1px solid;
+
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+
+  @media (max-width: 591px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .site-logo {
+    a {
+      font-size: 30px;
+
+      font-weight: 900;
+
+      &:hover {
+        color: var(--text-gold-primary-color);
+      }
+    }
+  }
+
+  .nav-links {
+    li {
+      display: inline-block;
+      a {
+        color: #777;
+        padding: 10px;
+        transition: 0.5s color ease;
+        &:hover {
+          color: var(--gold-gradient-most-used);
+        }
+      }
+    }
+    &.nav-left {
+      li {
+        &:first-child {
+          padding-left: 0;
+        }
+      }
+    }
+    &.nav-right {
+      li {
+        &:last-child {
+          padding-right: 0;
+        }
+      }
+    }
+  }
+  .copyright {
+    border-top: 1px solid #efefef;
+
+    padding-top: 50px;
+    text-align: center;
+  }
+
+  .subscribe {
+    .form-group {
+      display: flex;
+
+      position: relative;
+      input[type="email"] {
+        height: 45px;
+        border: none;
+        background: lighten(#ccc, 10%);
+        font-size: 1.5rem;
+      }
+      button {
+        font-size: 1.5rem;
+
+        color: var(--gold-gradient-most-used);
+        background: var(--main-black-background);
+
+        width: 10rem;
+      }
+    }
+  }
+
+  .social {
+    li {
+      display: inline-block;
+      position: relative;
+      transition: 0.2s all ease;
+
+      a {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+        background: var(---gold-gradient-most-used);
+        transition: 0.3s background ease;
+
+        &:hover {
+          background: var(--text-black-menu-color);
+        }
+
+        span {
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          transition: 0.5s color ease;
+
+          i {
+            font-size: 2.4rem;
+            color: var(--text-black-menu-color);
+
+            &:hover {
+              color: var(---gold-gradient-most-used);
+            }
+          }
+        }
+      }
+    }
+
+    li:not(:first-child) {
+      margin-left: 1rem !important;
+    }
+  }
+}

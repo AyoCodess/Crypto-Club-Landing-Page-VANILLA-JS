@@ -11187,23 +11187,23 @@ nav ul {
 }
 .container-table .crypto-column {
   display: grid;
-  grid-template-columns: minmax(15rem, 30rem);
+  grid-template-columns: minmax(auto, 30rem);
   grid-template-rows: auto;
   align-items: center;
 }
 .container-table .crypto-column .crypto-coin {
   padding: 1rem;
-  min-width: 15rem;
+  min-width: 10rem;
 }
 .container-table .crypto-rating {
   display: grid;
-  grid-template-columns: minmax(15rem, 30rem);
+  grid-template-columns: minmax(auto, 30rem);
   grid-template-rows: auto;
   align-items: center;
 }
 .container-table .crypto-rating .crypto-rating-score {
   padding: 1rem;
-  min-width: 15rem;
+  min-width: 10rem;
 }
 
 .black-row {
@@ -11220,6 +11220,104 @@ nav ul {
 .header-title {
   font-size: 3rem;
   padding: 0rem !important;
+}
+
+.border-bottom {
+  border-bottom: 1px solid;
+  border-color: var(--gold-gradient-most-used) !important;
+}
+
+.footer-container {
+  border-top: 1px solid;
+  padding-top: 4rem;
+  padding-bottom: 1.5rem;
+}
+@media (max-width: 591px) {
+  .footer-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+}
+.footer-container .site-logo a {
+  font-size: 30px;
+  font-weight: 900;
+}
+.footer-container .site-logo a:hover {
+  color: var(--text-gold-primary-color);
+}
+.footer-container .nav-links li {
+  display: inline-block;
+}
+.footer-container .nav-links li a {
+  color: #777;
+  padding: 10px;
+  transition: 0.5s color ease;
+}
+.footer-container .nav-links li a:hover {
+  color: var(--gold-gradient-most-used);
+}
+.footer-container .nav-links.nav-left li:first-child {
+  padding-left: 0;
+}
+.footer-container .nav-links.nav-right li:last-child {
+  padding-right: 0;
+}
+.footer-container .copyright {
+  border-top: 1px solid #efefef;
+  padding-top: 50px;
+  text-align: center;
+}
+.footer-container .subscribe .form-group {
+  display: flex;
+  position: relative;
+}
+.footer-container .subscribe .form-group input[type=email] {
+  height: 45px;
+  border: none;
+  background: #e6e6e6;
+  font-size: 1.5rem;
+}
+.footer-container .subscribe .form-group button {
+  font-size: 1.5rem;
+  color: var(--gold-gradient-most-used);
+  background: var(--main-black-background);
+  width: 10rem;
+}
+.footer-container .social li {
+  display: inline-block;
+  position: relative;
+  transition: 0.2s all ease;
+}
+.footer-container .social li a {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  background: var(---gold-gradient-most-used);
+  transition: 0.3s background ease;
+}
+.footer-container .social li a:hover {
+  background: var(--text-black-menu-color);
+}
+.footer-container .social li a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.5s color ease;
+}
+.footer-container .social li a span i {
+  font-size: 2.4rem;
+  color: var(--text-black-menu-color);
+}
+.footer-container .social li a span i:hover {
+  color: var(---gold-gradient-most-used);
+}
+.footer-container .social li:not(:first-child) {
+  margin-left: 1rem !important;
 }
 
 /*# sourceMappingURL=style.css.map */

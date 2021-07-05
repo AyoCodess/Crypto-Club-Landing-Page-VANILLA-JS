@@ -5701,7 +5701,7 @@ textarea.form-control-lg {
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
-  transition: transform 5s ease-in-out;
+  transition: 20s ease;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5742,7 +5742,7 @@ textarea.form-control-lg {
 .carousel-fade .active.carousel-item-end {
   z-index: 0;
   opacity: 0;
-  transition: opacity 0s 5s;
+  transition: opacity 0s 20s;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start,
@@ -10860,6 +10860,7 @@ body {
   color: var(--text-gold-primary-color);
   position: relative;
   height: 100%;
+  overflow-x: hidden;
 }
 
 .divider {
@@ -11523,14 +11524,6 @@ nav ul {
 
   .showcase-container {
     margin-top: 9rem;
-  }
-
-  #hamburger {
-    display: block;
-    position: absolute;
-    z-index: 102;
-    top: 0.8%;
-    left: 45%;
   }
 
   .ps-container .ps-text-container h1 {

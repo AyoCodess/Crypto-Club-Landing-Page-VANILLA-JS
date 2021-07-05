@@ -1,7 +1,7 @@
 //? carousel
 
-$carousel-transition-duration: 5s;
-// $carousel-caption-width: 100%;
+$carousel-transition-duration: 20s;
+$carousel-transition: 20s ease;
 
 //! IMPORT BOOTSTRAP STAYS AT THE BOTTOM
 @import "../node_modules/bootstrap/scss/bootstrap.scss";

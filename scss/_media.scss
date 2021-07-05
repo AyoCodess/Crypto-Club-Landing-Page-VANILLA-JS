@@ -72,10 +72,17 @@
   }
 }
 
-@media (max-width: 783px) {
+@media (max-width: 800px) {
+  .showcase-container {
+    display: block;
+  }
   .showcase-container .main-texts {
     width: 100%;
     text-align: center;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
 
     p {
       width: 35rem;
@@ -89,8 +96,133 @@
     align-items: center;
   }
   .btc-animation {
+    display: block !important;
+    position: static;
+  }
+}
+
+@media (max-width: 800px) {
+  .divider-margin {
+    margin-top: 4rem !important;
+  }
+}
+
+@media (max-width: 783px) {
+  .carousel-inner {
+    position: relative;
+    width: 200rem;
+    overflow: visible;
+    text-align: center;
+    height: 2rem;
+  }
+
+  $carousel-caption-width: 500rem;
+}
+
+@media (max-width: 711px) {
+  .ps-container {
+    flex-direction: column;
+
+    align-items: center;
+
+    .main-card {
+      order: 2;
+    }
+
+    .ps-text-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      order: 1;
+    }
+  }
+}
+
+@media (max-width: 591px) {
+  .ps-container .ps-text-container p {
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+  }
+}
+
+@media (max-width: 609px) {
+  #hamburger {
     position: absolute;
-    top: 110%;
-    left: 20%;
+    left: 80%;
+    top: 1%;
+  }
+}
+@media (max-width: 547px) {
+}
+
+@media (max-width: 414px) {
+  .showcase-container .main-texts .title {
+    font-size: 4.5rem;
+  }
+
+  .showcase-container {
+    margin-top: 9rem;
+    display: flex;
+  }
+
+  #hamburger {
+    display: block;
+    position: absolute;
+    z-index: 102;
+    top: 0.8%;
+    left: 45%;
+  }
+
+  .ps-container {
+    flex-shrink: 1 !important;
+  }
+
+  .ps-container .ps-text-container {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 2rem;
+    }
+  }
+
+  .container-card .card-1 {
+    max-width: 300px;
+
+    margin: 0 auto !important;
+  }
+}
+
+@media (max-width: 375px) {
+  .ps-container .ps-text-container {
+    h1 {
+      font-size: 3rem;
+    }
+
+    p {
+      font-size: 1.5em;
+      padding: 0 0 1.5rem;
+    }
+  }
+
+  .table-headers-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .container-table {
+    margin-top: 3rem;
+  }
+
+  .showcase-container .sub-text {
+    font-size: 1.5rem;
+  }
+
+  .showcase-container .main-texts p {
+    max-width: 20rem;
+    margin: 0 auto;
   }
 }

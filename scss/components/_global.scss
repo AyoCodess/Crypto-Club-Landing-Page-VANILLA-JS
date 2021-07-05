@@ -62,8 +62,17 @@ body {
   display: flex !important;
 }
 
-@media (max-width: 764px) {
+@media (max-width: 783px) {
   .divider-margin {
     margin-top: 43rem !important;
+  }
+}
+
+@media (max-width: 582px) {
+  .divider-reverse {
+    margin-top: 3rem;
+  }
+  .divider-rc {
+    margin-top: 3rem;
   }
 }

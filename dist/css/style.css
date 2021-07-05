@@ -5701,7 +5701,7 @@ textarea.form-control-lg {
   width: 100%;
   margin-right: -100%;
   backface-visibility: hidden;
-  transition: transform 20s ease-in-out;
+  transition: transform 5s ease-in-out;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-item {
@@ -5742,7 +5742,7 @@ textarea.form-control-lg {
 .carousel-fade .active.carousel-item-end {
   z-index: 0;
   opacity: 0;
-  transition: opacity 0s 20s;
+  transition: opacity 0s 5s;
 }
 @media (prefers-reduced-motion: reduce) {
   .carousel-fade .active.carousel-item-start,
@@ -5861,9 +5861,9 @@ textarea.form-control-lg {
 
 .carousel-caption {
   position: absolute;
-  right: 0%;
+  right: 15%;
   bottom: 1.25rem;
-  left: 0%;
+  left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: #fff;
@@ -10892,9 +10892,18 @@ body {
   display: flex !important;
 }
 
-@media (max-width: 764px) {
+@media (max-width: 783px) {
   .divider-margin {
     margin-top: 43rem !important;
+  }
+}
+@media (max-width: 582px) {
+  .divider-reverse {
+    margin-top: 3rem;
+  }
+
+  .divider-rc {
+    margin-top: 3rem;
   }
 }
 #hamburger {
@@ -11011,7 +11020,9 @@ nav li:last-child a i {
   align-items: center;
 }
 .ps-container .ps-text-container {
-  width: 50rem;
+  display: flex;
+  flex-direction: column;
+  max-width: 50rem;
   margin: 0rem 4rem;
 }
 .ps-container .ps-text-container h1 {
@@ -11202,6 +11213,7 @@ nav ul {
   width: 100%;
   overflow: visible;
   text-align: center;
+  height: 2rem;
 }
 
 .table-headers-container {
@@ -11432,10 +11444,17 @@ nav ul {
     width: 40rem;
   }
 }
-@media (max-width: 783px) {
+@media (max-width: 800px) {
+  .showcase-container {
+    display: block;
+  }
+
   .showcase-container .main-texts {
     width: 100%;
     text-align: center;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
   }
   .showcase-container .main-texts p {
     width: 35rem;
@@ -11449,9 +11468,153 @@ nav ul {
   }
 
   .btc-animation {
+    display: block !important;
+    position: static;
+  }
+}
+@media (max-width: 800px) {
+  .divider-margin {
+    margin-top: 4rem !important;
+  }
+}
+@media (max-width: 783px) {
+  .btc-animation {
     position: absolute;
-    top: 110%;
-    left: 20%;
+    top: 105%;
+    left: 10%;
+    transform: translate(18%, 10%);
+  }
+
+  .carousel-inner {
+    position: relative;
+    width: 200rem;
+    overflow: visible;
+    text-align: center;
+    height: 2rem;
+  }
+}
+@media (max-width: 711px) {
+  .ps-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .ps-container .main-card {
+    order: 2;
+  }
+  .ps-container .ps-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    order: 1;
+  }
+}
+@media (max-width: 591px) {
+  .btc-animation {
+    position: absolute;
+    top: 105%;
+    left: 10%;
+    transform: translate(18%, 10%);
+  }
+
+  .ps-container .ps-text-container p {
+    margin-bottom: 3rem;
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 609px) {
+  #hamburger {
+    position: absolute;
+    left: 80%;
+    top: 1%;
+  }
+}
+@media (max-width: 547px) {
+  .btc-animation {
+    position: absolute;
+    top: 105%;
+    left: 8%;
+    transform: translate(18%, 10%);
+  }
+}
+@media (max-width: 414px) {
+  .showcase-container .main-texts .title {
+    font-size: 4.5rem;
+  }
+
+  .btc-animation {
+    position: absolute;
+    top: 105%;
+    left: -5%;
+    transform: translate(18%, 10%);
+  }
+
+  .showcase-container {
+    margin-top: 9rem;
+    display: flex;
+  }
+
+  #hamburger {
+    display: block;
+    position: absolute;
+    z-index: 102;
+    top: 0.8%;
+    left: 45%;
+  }
+
+  .ps-container {
+    flex-shrink: 1 !important;
+  }
+
+  .ps-container .ps-text-container h1 {
+    font-size: 3rem;
+  }
+  .ps-container .ps-text-container p {
+    font-size: 2rem;
+  }
+
+  .container-card .card-1 {
+    max-width: 300px;
+    margin: 0 auto !important;
+  }
+}
+@media (max-width: 375px) {
+  .ps-container .ps-text-container h1 {
+    font-size: 3rem;
+  }
+  .ps-container .ps-text-container p {
+    font-size: 1.5em;
+    padding: 0 0 1.5rem;
+  }
+
+  .table-headers-container h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+
+  .container-table {
+    margin-top: 3rem;
+  }
+
+  .showcase-container .sub-text {
+    font-size: 1.5rem;
+  }
+
+  .showcase-container .main-texts p {
+    max-width: 20rem;
+    margin: 0 auto;
+  }
+
+  .btc-animation {
+    top: 105%;
+    left: -12%;
+  }
+}
+@media (max-width: 360px) {
+  .btc-animation {
+    top: 105%;
+    left: -15%;
   }
 }
 

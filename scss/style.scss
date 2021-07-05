@@ -1,6 +1,5 @@
 @use "bs-custom"; //!Bootstrap
-
-@use "showcase";
+@use "../scss/sections/showcase";
 @use "../scss/components/global";
 @use "../scss/sections/navbar";
 @use "variables";
@@ -9,3 +8,4 @@
 @use "../scss/sections/news-alerts";
 @use "../scss/sections/table";
 @use "../scss/sections/footer";
+@use "media";

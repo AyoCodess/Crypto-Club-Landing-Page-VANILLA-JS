@@ -1,4 +1,5 @@
 html {
+  margin-top: 0rem;
   font-size: 62.5%;
   box-sizing: border-box;
 }
@@ -25,6 +26,8 @@ body {
   font-family: "Calibre", sans-serif;
   background: var(--main-black-background);
   color: var(--text-gold-primary-color);
+  position: relative;
+  height: 100%;
 }
 
 //? section divider bottom
@@ -45,4 +48,8 @@ body {
   height: 100px;
   background-image: linear-gradient(to right, #000000, #363636, #232222);
   clip-path: ellipse(207% 100% at 178.74% 100%);
+}
+
+.container {
+  position: relative;
 }

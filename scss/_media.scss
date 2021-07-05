@@ -1,0 +1,48 @@
+//? NAVBAR
+
+@media (max-width: 1416px) {
+  .nav-btn {
+    font-size: 1.5rem;
+  }
+  .theme-btn-bg {
+    width: auto;
+  }
+
+  nav li:last-child a i {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+}
+
+@media (max-width: 1215px) {
+  .nav-btn {
+    font-size: 1.5rem;
+  }
+  .theme-btn-bg {
+    width: auto;
+  }
+
+  nav li:last-child a i {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+
+  nav {
+    position: fixed;
+    flex-direction: column;
+
+    top: 5px;
+    left: 20px;
+    z-index: 101;
+
+    ul {
+      margin-top: 0rem;
+      padding: 0rem 2rem;
+      display: grid;
+      row-gap: 1rem;
+      background: var(--main-black-background);
+    }
+  }
+}

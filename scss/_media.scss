@@ -164,7 +164,6 @@
 
   .showcase-container {
     margin-top: 9rem;
-    display: flex;
   }
 
   #hamburger {
@@ -173,10 +172,6 @@
     z-index: 102;
     top: 0.8%;
     left: 45%;
-  }
-
-  .ps-container {
-    flex-shrink: 1 !important;
   }
 
   .ps-container .ps-text-container {

@@ -11478,13 +11478,6 @@ nav ul {
   }
 }
 @media (max-width: 783px) {
-  .btc-animation {
-    position: absolute;
-    top: 105%;
-    left: 10%;
-    transform: translate(18%, 10%);
-  }
-
   .carousel-inner {
     position: relative;
     width: 200rem;
@@ -11511,13 +11504,6 @@ nav ul {
   }
 }
 @media (max-width: 591px) {
-  .btc-animation {
-    position: absolute;
-    top: 105%;
-    left: 10%;
-    transform: translate(18%, 10%);
-  }
-
   .ps-container .ps-text-container p {
     margin-bottom: 3rem;
     font-size: 1.7rem;
@@ -11530,29 +11516,13 @@ nav ul {
     top: 1%;
   }
 }
-@media (max-width: 547px) {
-  .btc-animation {
-    position: absolute;
-    top: 105%;
-    left: 8%;
-    transform: translate(18%, 10%);
-  }
-}
 @media (max-width: 414px) {
   .showcase-container .main-texts .title {
     font-size: 4.5rem;
   }
 
-  .btc-animation {
-    position: absolute;
-    top: 105%;
-    left: -5%;
-    transform: translate(18%, 10%);
-  }
-
   .showcase-container {
     margin-top: 9rem;
-    display: flex;
   }
 
   #hamburger {
@@ -11561,10 +11531,6 @@ nav ul {
     z-index: 102;
     top: 0.8%;
     left: 45%;
-  }
-
-  .ps-container {
-    flex-shrink: 1 !important;
   }
 
   .ps-container .ps-text-container h1 {
@@ -11604,17 +11570,6 @@ nav ul {
   .showcase-container .main-texts p {
     max-width: 20rem;
     margin: 0 auto;
-  }
-
-  .btc-animation {
-    top: 105%;
-    left: -12%;
-  }
-}
-@media (max-width: 360px) {
-  .btc-animation {
-    top: 105%;
-    left: -15%;
   }
 }
 

@@ -19,8 +19,9 @@
   .site-nav {
     display: block;
   }
+
   nav {
-    display: none;
+    display: none !important;
     position: fixed;
     flex-direction: column;
 
@@ -51,12 +52,12 @@
       width: auto;
     }
   }
-}
 
-#hamburger {
-  display: block;
-  position: fixed;
-  z-index: 102;
-  top: 5%;
-  left: 90%;
+  #hamburger {
+    display: block;
+    position: fixed;
+    z-index: 102;
+    top: 7%;
+    left: 90%;
+  }
 }

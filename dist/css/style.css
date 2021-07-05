@@ -10889,14 +10889,18 @@ body {
 }
 
 .show {
-  display: block !important;
+  display: flex !important;
 }
 
 #hamburger {
   display: none;
-  color: var(--gold-gradient-most-used);
-  font-size: 5rem;
+  font-size: 4rem;
   cursor: pointer;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+  background: var(---gold-gradient-most-used);
+  line-height: 0;
+  color: black;
 }
 
 .side-nav {
@@ -11377,7 +11381,7 @@ nav ul {
   }
 
   nav {
-    display: none;
+    display: none !important;
     position: fixed;
     flex-direction: column;
     top: 5px;
@@ -11404,13 +11408,14 @@ nav ul {
   nav .theme-btn-bg {
     width: auto;
   }
-}
-#hamburger {
-  display: block;
-  position: fixed;
-  z-index: 102;
-  top: 5%;
-  left: 90%;
+
+  #hamburger {
+    display: block;
+    position: fixed;
+    z-index: 102;
+    top: 7%;
+    left: 90%;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

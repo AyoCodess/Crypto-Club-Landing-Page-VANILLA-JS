@@ -2,9 +2,15 @@
 
 #hamburger {
   display: none;
-  color: var(--gold-gradient-most-used);
-  font-size: 5rem;
+  font-size: 4rem;
   cursor: pointer;
+  padding: 1rem 1rem;
+  border-radius: 2rem;
+
+  background: var(---gold-gradient-most-used);
+
+  line-height: 0;
+  color: black;
 }
 
 .side-nav {

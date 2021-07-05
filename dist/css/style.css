@@ -10892,6 +10892,11 @@ body {
   display: flex !important;
 }
 
+@media (max-width: 764px) {
+  .divider-margin {
+    margin-top: 43rem !important;
+  }
+}
 #hamburger {
   display: none;
   font-size: 4rem;
@@ -11415,6 +11420,38 @@ nav ul {
     z-index: 102;
     top: 7%;
     left: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .showcase-container {
+    margin-top: 12rem;
+    display: flex;
+  }
+
+  .showcase-container .main-texts {
+    width: 40rem;
+  }
+}
+@media (max-width: 783px) {
+  .showcase-container .main-texts {
+    width: 100%;
+    text-align: center;
+  }
+  .showcase-container .main-texts p {
+    width: 35rem;
+    margin: 0 auto;
+  }
+
+  .cta-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .btc-animation {
+    position: absolute;
+    top: 110%;
+    left: 20%;
   }
 }
 

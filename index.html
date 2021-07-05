@@ -38,15 +38,18 @@
     /////////////////////////////////////////////////////////////////////////////////////////////-->
     
     
-    <div class="side-nav">
+
+
+    <div class="side-nav hide">
           <div class="side-nav-container">
           </div>
     </div>
+
     
     <div class="container">
-      <nav>
+      <nav id="nav" class="show">
         <h1 class=" logo text-gradient-white site-logo">IIAGI</h1>
-        <ul>
+        <ul class="side-nav-list ">
           <li><a class="nav-btn " href="#" target="_blank">Private Syndicate</a></li>
           <li><a class="nav-btn " href="#" target="_blank">Learn Crypto</a></li>
           <li><a class="nav-btn " href="#" target="_blank">Full Guide</a></li>
@@ -62,6 +65,9 @@
          <!-- ////////////////////////////////////////////////////////////////////////////////////////
                                            NEWS ALERTS                                  
           /////////////////////////////////////////////////////////////////////////////////////////////-->
+
+
+          <a id="hamburger" href="#"><i class="fas fa-bars"></i></a>
 
           <div class="news-container">
             <div id="newsAlerts" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -290,7 +296,8 @@
 
 
     <script src="/other-js/lightmode.js"></script>
-    <script src="/vendors/js/bootstrap.bundle.js"></script>
     <script src="/other-js/navbar.js"></script>
+    <script src="/vendors/js/bootstrap.bundle.js"></script>
+   
   </body>
 </html>

@@ -16,20 +16,11 @@
 }
 
 @media (max-width: 1215px) {
-  .nav-btn {
-    font-size: 1.5rem;
+  .site-nav {
+    display: block;
   }
-  .theme-btn-bg {
-    width: auto;
-  }
-
-  nav li:last-child a i {
-    text-align: center;
-    font-size: 2rem;
-    padding: 0.5rem;
-  }
-
   nav {
+    display: none;
     position: fixed;
     flex-direction: column;
 
@@ -43,6 +34,29 @@
       display: grid;
       row-gap: 1rem;
       background: var(--main-black-background);
+      border: 2px solid;
+      border-color: var(--gold-gradient-most-used);
+
+      li:last-child a i {
+        text-align: center;
+        font-size: 2rem;
+        padding: 0.5rem;
+      }
+    }
+
+    .nav-btn {
+      font-size: 1.5rem;
+    }
+    .theme-btn-bg {
+      width: auto;
     }
   }
+}
+
+#hamburger {
+  display: block;
+  position: fixed;
+  z-index: 102;
+  top: 5%;
+  left: 90%;
 }

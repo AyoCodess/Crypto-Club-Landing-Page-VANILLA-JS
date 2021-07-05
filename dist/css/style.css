@@ -10884,14 +10884,31 @@ body {
   position: relative;
 }
 
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+#hamburger {
+  display: none;
+  color: var(--gold-gradient-most-used);
+  font-size: 5rem;
+  cursor: pointer;
+}
+
 .side-nav {
   position: absolute;
+  top: 25px;
   width: 24rem;
   height: 100%;
   border-right: solid 2px;
   border-color: black;
   opacity: 0.9;
   z-index: 100;
+  border-radius: 0 10px 0 0;
   background: var(---gold-gradient-most-used);
 }
 
@@ -10900,7 +10917,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   font-size: 2rem;
-  padding-top: 1rem;
+  padding-top: 3rem;
 }
 nav h1 {
   margin-top: 1.5rem;
@@ -11146,6 +11163,7 @@ nav ul {
 }
 
 .news-container {
+  position: relative;
   display: grid;
   justify-content: center;
   align-items: center;
@@ -11354,21 +11372,12 @@ nav ul {
   }
 }
 @media (max-width: 1215px) {
-  .nav-btn {
-    font-size: 1.5rem;
-  }
-
-  .theme-btn-bg {
-    width: auto;
-  }
-
-  nav li:last-child a i {
-    text-align: center;
-    font-size: 2rem;
-    padding: 0.5rem;
+  .site-nav {
+    display: block;
   }
 
   nav {
+    display: none;
     position: fixed;
     flex-direction: column;
     top: 5px;
@@ -11381,7 +11390,27 @@ nav ul {
     display: grid;
     row-gap: 1rem;
     background: var(--main-black-background);
+    border: 2px solid;
+    border-color: var(--gold-gradient-most-used);
   }
+  nav ul li:last-child a i {
+    text-align: center;
+    font-size: 2rem;
+    padding: 0.5rem;
+  }
+  nav .nav-btn {
+    font-size: 1.5rem;
+  }
+  nav .theme-btn-bg {
+    width: auto;
+  }
+}
+#hamburger {
+  display: block;
+  position: fixed;
+  z-index: 102;
+  top: 5%;
+  left: 90%;
 }
 
 /*# sourceMappingURL=style.css.map */

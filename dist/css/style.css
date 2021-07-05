@@ -11215,7 +11215,6 @@ nav ul {
   overflow: visible;
   text-align: center;
   height: 2rem;
-  overflow-y: hidden;
 }
 
 .table-headers-container {
@@ -11482,7 +11481,7 @@ nav ul {
 @media (max-width: 783px) {
   .carousel-inner {
     position: relative;
-    width: 200rem;
+    width: 100%;
     overflow: visible;
     text-align: center;
     height: 2rem;

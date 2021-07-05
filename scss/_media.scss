@@ -110,13 +110,13 @@
 @media (max-width: 783px) {
   .carousel-inner {
     position: relative;
-    width: 200rem;
+    width: 100%;
     overflow: visible;
     text-align: center;
     height: 2rem;
   }
 
-  $carousel-caption-width: 500rem;
+  $carousel-caption-width: 100%;
 }
 
 @media (max-width: 711px) {

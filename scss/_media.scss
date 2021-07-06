@@ -19,6 +19,7 @@
   .site-nav {
     position: fixed;
     display: block;
+    overflow-y: hidden;
   }
 
   .nav-normal {
@@ -31,7 +32,7 @@
     justify-content: center;
 
     top: 5px;
-    left: 15px;
+    left: 14.5px;
     z-index: 101;
 
     h1 {

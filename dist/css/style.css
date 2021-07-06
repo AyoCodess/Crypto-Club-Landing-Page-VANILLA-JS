@@ -10971,6 +10971,10 @@ nav li:last-child a i {
   padding: 1rem;
   color: #e9c65f;
 }
+.nav-btn:last-child:hover {
+  color: var(--gold-gradient-most-used) !important;
+}
+
 :root {
   --main-black-background: linear-gradient(to right, #000000, #252525);
   --text-gold-primary-color: rgba(241, 184, 12, 1);

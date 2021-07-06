@@ -80,3 +80,9 @@ nav {
     }
   }
 }
+
+.nav-btn:last-child {
+  &:hover {
+    color: var(--gold-gradient-most-used) !important;
+  }
+}

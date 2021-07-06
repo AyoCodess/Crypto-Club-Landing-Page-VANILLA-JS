@@ -1,7 +1,7 @@
 const hamburger = document.getElementById(`hamburger`);
 const theBody = document.body;
 const sideNav = document.querySelector(`.side-nav`);
-const sideNavList = document.getElementById(`nav`);
+const sideNavList = document.getElementById(`side-nav`);
 const navMediaQuery = window.matchMedia("(max-width: 1215px)");
 const navMediaQuery2 = window.matchMedia("(min-width: 1215px)");
 const carouselInterval = document.getElementById(`newsAlerts`);

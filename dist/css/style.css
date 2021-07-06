@@ -11436,8 +11436,11 @@ nav ul {
     display: block;
   }
 
+  .nav-normal {
+    display: none;
+  }
+
   nav {
-    display: none !important;
     position: fixed;
     flex-direction: column;
     top: 5px;

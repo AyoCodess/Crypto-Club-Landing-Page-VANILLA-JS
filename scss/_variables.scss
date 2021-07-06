@@ -25,6 +25,33 @@
   ---silver-gradient: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
 }
 
+// [data-theme="dark"] {
+//   --main-black-background: linear-gradient(to right, #ffffff, #f3efe6, #f1ead5);
+
+//   --text-gold-primary-color: black;
+//   --text-white-secondary-color: white;
+//   --text-black-menu-color: black;
+
+//   --navbar-gold-gradient-bg: linear-gradient(
+//     to right,
+//     #f1b80c,
+//     #f6cc4d,
+//     #f1b80c
+//   );
+
+//   --current-release-box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+//     rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+
+//   ---gold-gradient-most-used: linear-gradient(
+//     to right,
+//     #f1b80c,
+//     #e9c65f,
+//     #aa820b
+//   );
+
+//   ---silver-gradient: linear-gradient(to right, #b9b9b9, #ffffff, #f6f5f4);
+// }
+
 .text-gradient-gold {
   background-image: linear-gradient(to right, #f1b80c, #e9c65f, #aa820b);
   -webkit-background-clip: text;

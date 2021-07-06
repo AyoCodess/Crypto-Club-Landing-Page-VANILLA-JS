@@ -10,7 +10,6 @@ function lightMode() {
 function darkMode() {
   buttonBg.style.background = `linear-gradient(to right, #f6f5f4, #ffffff, #f6f5f4)`;
   localStorage.setItem(`theme`, `dark`);
-  b9b9b9;
 }
 
 toggleSwitch.addEventListener(`click`, toggleTheme);

@@ -10860,7 +10860,7 @@ body {
   color: var(--text-gold-primary-color);
   position: relative;
   height: 100%;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .divider {
@@ -11512,6 +11512,7 @@ nav ul {
   .btc-animation {
     display: block !important;
     position: static;
+    padding-right: 2.5rem;
   }
 }
 @media (max-width: 800px) {

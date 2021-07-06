@@ -10855,7 +10855,7 @@ li {
 }
 
 body {
-  font-family: "Calibre", sans-serif;
+  font-family: "Calibre", "lato", sans-serif;
   background: var(--main-black-background);
   color: var(--text-gold-primary-color);
   position: relative;
@@ -11478,7 +11478,7 @@ nav ul {
     display: block;
     position: fixed;
     z-index: 102;
-    top: 8%;
+    top: 9%;
     left: 90%;
   }
 }
@@ -11516,9 +11516,13 @@ nav ul {
   }
 
   .btc-animation {
-    display: block !important;
     position: static;
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding-right: 2.5rem;
+    height: 37rem;
   }
 }
 @media (max-width: 800px) {
@@ -11541,6 +11545,7 @@ nav ul {
     align-items: center;
     text-align: center;
     order: 1;
+    margin-bottom: 2rem;
   }
 
   .hwrap {

@@ -30,6 +30,9 @@
     <!-- * META TAGS FOR SOCIAL MEDIA ENDS * -->
 
     <link rel="stylesheet" href="/dist/css/style.css" />
+
+    <!-- ? Page Animation -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     
   </head>
 
@@ -116,8 +119,8 @@
       
     <section class="showcase">
       <div class="container">
-        <div class="showcase-container">
-          <div class="main-texts">
+        <div class="showcase-container"  >
+          <div class="main-texts" data-aos="fade-right" data-aos-duration="2000">
             <div class="title lead text-gradient-white">is it a good Investment?</div>
             <p class="sub-text text-gradient-gold"> Guiding everyday people getting started with crypto safely.</p>
             <div class="cta-buttons">
@@ -125,7 +128,7 @@
               <!-- <a href="" class="main-btn">Learn Crypto </a> -->
             </div>
           </div>
-          <div class="btc-animation">
+          <div class="btc-animation" data-aos="fade-up" data-aos-duration="2000">
             <div class="bitcoin">
               <img align="center" src="/img/btc-coin.png">
             </div>
@@ -144,7 +147,7 @@
           <div class="main-card">
             
 
-            <div class="container-card">
+            <div class="container-card" data-aos="fade-left" data-aos-duration="500">
               <div class="card-1">
                 <div class="box-1">
                   <div class="content-1">
@@ -157,7 +160,7 @@
               </div>
             </div>
           </div>
-            <div class="ps-text-container">
+            <div class="ps-text-container" data-aos="fade-right" data-aos-duration="500">
               <h1 class="text-gradient-white">Private Syndicate</h1>
               <p class="text-gradient-gold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repudiandae eos eveniet distinctio! Ea, voluptatum voluptatibus. Voluptas reprehenderit commodi odio.</p>
             </div>
@@ -170,14 +173,14 @@
       <div class="container">
         <div class="ps-container ps-container-mt">
           
-            <div class="ps-text-container">
-              <h1 class="text-gradient-white">Invest Effectively</h1>
+            <div class="ps-text-container" data-aos="fade-left" data-aos-duration="500">
+              <h1 class="text-gradient-white" >Invest Effectively</h1>
               <p class="text-gradient-gold">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste repudiandae eos eveniet distinctio! Ea, voluptatum voluptatibus. Voluptas reprehenderit commodi odio.</p>
             </div>
             <div class="main-card">
             
 
-              <div class="container-card">
+              <div class="container-card" data-aos="fade-right" data-aos-duration="500">
                 <div class="card-1">
                   <div class="box-1">
                     <div class="content-1">
@@ -207,14 +210,14 @@
    
   <div class="container ">
 
-    <div class="table-headers-container">
+    <div class="table-headers-container" data-aos="fade-up" data-aos-duration="500">
       <h1 class="text-gradient-gold">Researched Coin Sentiment</h1>
       <p class="text-gradient-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, optio.</p>
     </div>
 
    
       
-      <div class="container-table">
+      <div class="container-table" data-aos="zoom-in" data-aos-duration="500">
         <div class="crypto-column">
           <p class="crypto-coin header-title text-gradient-white">Project</p>
           <p class="crypto-coin silver-row">crypto</p>
@@ -314,7 +317,12 @@
 
     </footer>
 
-
+    <!-- ? Page Animation AOS-->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <!-- ? Other JS -->
     <script src="/other-js/lightmode.js"></script>
     <script src="/other-js/navbar.js"></script>
     <script src="/vendors/js/bootstrap.bundle.js"></script>

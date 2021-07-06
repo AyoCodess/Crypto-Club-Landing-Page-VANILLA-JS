@@ -60,7 +60,7 @@
     display: block;
     position: fixed;
     z-index: 102;
-    top: 8%;
+    top: 9%;
     left: 90%;
   }
 }
@@ -99,10 +99,16 @@
     align-items: center;
   }
   .btc-animation {
-    display: block !important;
     position: static;
 
+    display: flex !important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
     padding-right: 2.5rem;
+
+    height: 37rem;
   }
 }
 
@@ -129,6 +135,8 @@
       align-items: center;
       text-align: center;
       order: 1;
+
+      margin-bottom: 2rem;
     }
   }
 

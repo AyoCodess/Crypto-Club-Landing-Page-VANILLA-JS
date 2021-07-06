@@ -11183,37 +11183,73 @@ nav ul {
   transform: translateY(5px);
 }
 
-.news-container {
-  position: relative;
-  display: grid;
-  justify-content: center;
-  align-items: center;
-  margin-top: 2rem;
-  width: auto;
-  background-color: rgba(255, 255, 255, 0.15);
-}
-.news-container .carousel {
+/* (A) OUTER CONTAINER */
+.hwrap {
+  /* (A1) DIMENSIONS */
   width: 100%;
-}
-.news-container .carousel p {
-  display: inline-block;
-  font-size: 2.2rem;
-  color: var(--text-white-secondary-color);
-  width: 100%;
-  margin-bottom: 0rem;
-  line-height: 0;
-}
-.news-container .carousel p:hover {
-  color: var(--text-gold-primary-color) !important;
-  cursor: pointer;
-  transform: scale(1.01);
+  height: 150px;
+  /* OPTIONAL */
+  /* (A2) COSMETICS */
+  background: #fffdea;
+  border: 2px solid #ffcf1f;
+  overflow: hidden;
+  /* HIDE SCROLLBARS */
 }
 
-.carousel-inner {
+/* (B) MIDDLE CONTAINER - FLEX LAYOUT */
+.hmove {
+  display: flex;
   position: relative;
+  top: 0;
+  right: 0;
+}
+
+/* (C) SLIDES - FORCE INTO ONE LONG HORIZONTAL ROW */
+.hslide {
   width: 100%;
-  text-align: center;
-  line-height: 0;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+/* (D) SLIDE ANIMATION */
+@keyframes slideh {
+  /* (D0) THE IDEA - USE KEYFRAMES TO SHIFT SLIDES *
+  0% { right: 0; }
+  33% { right: 100%; }
+  66% { right: 200%; }
+  100% { right: 0; }
+
+  /* (D1) BUT THE ABOVE WILL SHIFT NON-STOP */
+  /* SO WE ADD PAUSES BETWEEN EACH SLIDE */
+  0% {
+    right: 0;
+  }
+  30% {
+    right: 0;
+  }
+  33% {
+    right: 100%;
+  }
+  63% {
+    right: 100%;
+  }
+  66% {
+    right: 200%;
+  }
+  97% {
+    right: 200%;
+  }
+  100% {
+    right: 0;
+  }
+}
+.hmove {
+  animation: slideh linear 15s infinite;
+}
+
+.hmove:hover {
+  animation-play-state: paused;
 }
 
 .table-headers-container {

@@ -11451,6 +11451,7 @@ nav ul {
   }
 
   nav {
+    position: fixed;
     flex-direction: column;
     justify-content: center;
     top: 5px;

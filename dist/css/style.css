@@ -10860,7 +10860,7 @@ body {
   color: var(--text-gold-primary-color);
   position: relative;
   height: 100%;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 .divider {

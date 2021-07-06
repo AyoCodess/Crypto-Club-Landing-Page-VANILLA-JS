@@ -11343,6 +11343,7 @@ nav ul {
 }
 .footer-container .nav-links li {
   display: inline-block;
+  font-size: 1.5rem;
 }
 .footer-container .nav-links li a {
   color: #777;
@@ -11414,6 +11415,10 @@ nav ul {
 }
 .footer-container .social li:not(:first-child) {
   margin-left: 1rem !important;
+}
+
+.copy {
+  font-size: 1.5rem;
 }
 
 @media (max-width: 1416px) {

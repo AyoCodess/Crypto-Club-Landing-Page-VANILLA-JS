@@ -33,6 +33,7 @@
   .nav-links {
     li {
       display: inline-block;
+      font-size: 1.5rem;
       a {
         color: #777;
         padding: 10px;
@@ -130,4 +131,8 @@
       margin-left: 1rem !important;
     }
   }
+}
+
+.copy {
+  font-size: 1.5rem;
 }

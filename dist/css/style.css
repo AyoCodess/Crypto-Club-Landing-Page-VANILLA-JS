@@ -10864,7 +10864,8 @@ body {
 }
 
 .site-wrapper {
-  overflow: hidden;
+  overflow-x: hidden !important;
+  overflow-y: scroll !important;
 }
 
 .divider {

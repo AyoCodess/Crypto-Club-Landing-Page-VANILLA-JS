@@ -31,13 +31,10 @@ body {
   overflow-x: hidden;
 }
 
-// .site-wrapper {
-//   overflow-x: hidden !important;
-//   overflow-y: scroll !important;
-// }
-
+.site-wrapper {
+  touch-action: pan-y pinch-zoom;
+}
 //? section divider bottom
-
 .divider {
   margin-top: 8rem;
   display: block;

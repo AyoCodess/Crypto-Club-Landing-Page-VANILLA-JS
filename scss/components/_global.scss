@@ -28,11 +28,11 @@ body {
   color: var(--text-gold-primary-color);
   position: relative;
   height: 100%;
-  overflow-x: hidden;
 }
 
 .site-wrapper {
-  touch-action: pan-y pinch-zoom;
+  overflow-x: hidden;
+  overflow-y: hidden !important;
 }
 //? section divider bottom
 .divider {

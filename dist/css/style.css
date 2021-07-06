@@ -11344,6 +11344,7 @@ nav ul {
 .footer-container .nav-links li {
   display: inline-block;
   font-size: 1.5rem;
+  padding: 0.5rem 0;
 }
 .footer-container .nav-links li a {
   color: #777;
@@ -11617,6 +11618,18 @@ nav ul {
   .container-card .card-1 {
     max-width: 300px;
     margin: 0 auto !important;
+  }
+
+  .table-headers-container h1 {
+    font-size: 3rem;
+  }
+
+  .container-table .crypto-rating .crypto-rating-score {
+    font-size: 2rem;
+  }
+
+  .container-table .crypto-column .crypto-coin {
+    font-size: 2rem;
   }
 }
 @media (max-width: 375px) {

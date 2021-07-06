@@ -223,6 +223,17 @@
 
     margin: 0 auto !important;
   }
+  .table-headers-container h1 {
+    font-size: 3rem;
+  }
+
+  .container-table .crypto-rating .crypto-rating-score {
+    font-size: 2rem;
+  }
+
+  .container-table .crypto-column .crypto-coin {
+    font-size: 2rem;
+  }
 }
 
 @media (max-width: 375px) {

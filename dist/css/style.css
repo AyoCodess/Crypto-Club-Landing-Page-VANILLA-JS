@@ -10863,6 +10863,10 @@ body {
   overflow-x: hidden;
 }
 
+.site-wrapper {
+  overflow: hidden;
+}
+
 .divider {
   margin-top: 8rem;
   display: block;
@@ -11457,7 +11461,7 @@ nav ul {
     flex-direction: column;
     justify-content: center;
     top: 5px;
-    left: 13px;
+    left: 13px !important;
     z-index: 101;
   }
   nav h1 {

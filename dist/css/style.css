@@ -10974,7 +10974,7 @@ nav li:last-child a i {
   padding: 1rem;
   color: #e9c65f;
 }
-.nav-btn:last-child:hover {
+.tg a:hover {
   color: var(--gold-gradient-most-used) !important;
 }
 
@@ -11143,12 +11143,17 @@ nav li:last-child a i {
   border-radius: 0.5rem;
   padding: 0.5rem 1rem;
   font-size: 2rem;
-  color: white !important;
+  color: white;
   transition: color 0.5s ease;
 }
 .nav-btn:hover {
   transform: scale(0.98) !important;
-  color: black !important;
+  color: black;
+}
+
+.tg:hover {
+  transform: scale(0.98) !important;
+  color: gold !important;
 }
 
 nav ul {

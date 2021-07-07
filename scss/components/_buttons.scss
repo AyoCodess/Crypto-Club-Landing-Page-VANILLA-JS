@@ -7,12 +7,19 @@
   padding: 0.5rem 1rem;
   font-size: 2rem;
 
-  color: white !important;
+  color: white;
   transition: color 0.5s ease;
 
   &:hover {
     transform: scale(0.98) !important;
-    color: black !important;
+    color: black;
+  }
+}
+
+.tg {
+  &:hover {
+    transform: scale(0.98) !important;
+    color: gold !important;
   }
 }
 

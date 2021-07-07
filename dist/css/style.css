@@ -10931,7 +10931,6 @@ body {
   height: 100%;
   border-right: solid 2px;
   border-color: black;
-  opacity: 0.9;
   z-index: 100;
   border-radius: 0 10px 0 0;
   background: var(---gold-gradient-most-used);

@@ -31,7 +31,8 @@ function mediaQuery() {
   }
 }
 
-function toggleSideBar() {
+function toggleSideBar(e) {
+  e.preventDefault();
   if (sideNav.classList.contains(`hide`) && navCon.classList.contains(`hide`)) {
     sideNav.classList.remove(`hide`);
     navCon.classList.remove(`hide`);
